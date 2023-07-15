@@ -4,10 +4,10 @@ from classes.attacks import Virus, Ransomware, Worm, Phishing, Exploit
 from classes.computer import Computer
 from classes.hardware import CPU, GPU, RAM, Storage
 from classes.network import Node, TorNetwork
-from classes.crypto_currency import CryptoWallet
+from classes.crypto.crypto_currency import CryptoWallet
 from classes.marketplace import DarkWebMarketplace
 from classes.game import Game
-from classes.crypto_market import CryptoMarket
+from classes.crypto.crypto_market import CryptoMarket
 
 # Create a character with a Tor network and a crypto wallet
 tor_network = TorNetwork()
