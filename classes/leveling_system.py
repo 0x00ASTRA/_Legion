@@ -1,10 +1,10 @@
 class LevelingSystem:
-    def __init__(self, xp_to_level_up):
+    def __init__(self, xp_to_level_up: int):
         self.xp = 0
         self.level = 1
         self.xp_to_level_up = xp_to_level_up
 
-    def increment_xp(self, xp):
+    def increment_xp(self, xp: int):
         self.xp += xp
         while self.xp >= self.xp_to_level_up:
             self.level_up()
