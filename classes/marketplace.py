@@ -1,10 +1,11 @@
 import random
-
+from classes.character import Character
+from classes.crypto.crypto_market_item import CryptoMarketItem
 class DarkWebMarketplace:
     def __init__(self, items):
         self.items = items  # Each item is represented as a string, and the value is the price in Bitcoin
 
-    def buy(self, item, character):
+    def buy(self, item: CryptoMarketItem, character: Character):
         if item not in self.items:
             return "Item not found."
         if character.wallet.currencies["BTC"] < self.items[item]:

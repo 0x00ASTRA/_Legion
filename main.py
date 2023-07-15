@@ -4,7 +4,7 @@ from classes.attacks import Virus, Ransomware, Worm, Phishing, Exploit
 from classes.computer import Computer
 from classes.hardware import CPU, GPU, RAM, Storage
 from classes.network import Node, TorNetwork
-from _Legion.classes.crypto_currency import CryptoWallet
+from classes.crypto_currency import CryptoWallet
 from classes.marketplace import DarkWebMarketplace
 from classes.game import Game
 from classes.crypto_market import CryptoMarket
