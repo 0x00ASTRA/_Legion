@@ -1,6 +1,7 @@
 import random
 import uuid
-class Node:
+
+class Router:
     def __init__(self):
         self.id = uuid.uuid4()
         self.online = True
@@ -18,7 +19,8 @@ class Node:
         self.compromised = True
         self.reputation -= 50  # Getting compromised significantly reduces the node's reputation
 
-class TorNetwork:
+
+class Network:
     def __init__(self):
         self.nodes = []
 
