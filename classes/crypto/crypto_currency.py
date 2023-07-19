@@ -1,4 +1,6 @@
 import random
+import os
+import json
 
 class CryptoCurrency:
     def __init__(self, name, symbol, initial_price, initial_supply):
@@ -27,6 +29,12 @@ class CryptoCurrency:
             "price": self.price
         }
 
-    def from_json(self, file):
+    def from_json(self, file_path: str):
         # load the json config file
-        pass
+        file_name, file_ext = os.splitext(file_path)
+        if not file_ext == '.json':
+            print(f"Error: File extention not compatible '{file_ext}', expected '.json'")
+        try:
+            self.__dict__ = json.loads(file_path)
+        except:
+            raise(TypeError(f'Unable to load the json configuration: {file_path}'))
