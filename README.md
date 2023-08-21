@@ -58,6 +58,18 @@ Legion embraces the very essence of the hacker ethos - collaboration. We are all
 
 Before contributing, please read our [Contribution Guidelines](link-to-guidelines) and [Code of Conduct](link-to-conduct).
 
+### Wallets 🪙
+| Icon | Token | Address                                      |
+|------| ----- | -------------------------------------------- |
+| <img src="public/SOL.png" width=30> | SOL   | 12Ymegdn9Gw27BoE9bkdH7TViDdmj4is1kpM7BWLuD9X |
+| <img src="public/LTC.png" width=30> | LTC   | LeiSY4Frv5odEk16FgR6JMPNy7SurHwBN7           |
+| <img src="public/BTC.png" width=30> | BTC   | 12kV7ixtjP7W8PowrgwsAQLafX1kzVg4PB           |
+| <img src="public/ETH.png" width=30> | ETH   | 0x02c5e2ec62640771851D3BD0c283936A6481e678   |
+| <img src="public/DOGE.png" width=30> | DOGE  | DLTzZUjJ8WwZ8rHNfeYTLcYALoRGu73s3t           |
+| <img src="public/NEOX.png" width=30> | NEOX  | GNcbu5GuZKMUui8A9eZxGXhJurgSixNRfT           |
+| <img src="public/RVN.png" width=30> | RVN   | RPCyf776AFX2qm3H3v77RnrvtX2QF2f1cg |
+
+
 ## Disclaimer ⚠️
 
 Legion is a game that simulates hacking. All in-game actions and entities are fictional. The use of this software for any malicious or illegal activities is strictly prohibited. The developers of Legion hold no liability for misuse of the game.
