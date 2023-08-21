@@ -61,13 +61,13 @@ Before contributing, please read our [Contribution Guidelines](link-to-guideline
 ### Wallets 🪙
 | Icon | Token | Address                                      |
 |------| ----- | -------------------------------------------- |
-| <img src="https://github.com/0x00ASTRA/imgs/crypto/SOL.png" width=30> | SOL   | 12Ymegdn9Gw27BoE9bkdH7TViDdmj4is1kpM7BWLuD9X |
-| <img src="https://github.com/0x00ASTRA/imgs/crypto/LTC.png" width=30> | LTC   | LeiSY4Frv5odEk16FgR6JMPNy7SurHwBN7           |
-| <img src="https://github.com/0x00ASTRA/imgs/crypto/BTC.png" width=30> | BTC   | 12kV7ixtjP7W8PowrgwsAQLafX1kzVg4PB           |
-| <img src="https://github.com/0x00ASTRA/imgs/crypto/ETH.png" width=30> | ETH   | 0x02c5e2ec62640771851D3BD0c283936A6481e678   |
-| <img src="public/DOGE.png" width=30> | DOGE  | DLTzZUjJ8WwZ8rHNfeYTLcYALoRGu73s3t           |
-| <img src="https://github.com/0x00ASTRA/imgs/crypto/NEOX.png" width=30> | NEOX  | GNcbu5GuZKMUui8A9eZxGXhJurgSixNRfT           |
-| <img src="https://github.com/0x00ASTRA/imgs/crypto/RVN.png" width=30> | RVN   | RPCyf776AFX2qm3H3v77RnrvtX2QF2f1cg |
+| <img src="https://github.com/0x00ASTRA/imgs/blob/da8ce370006ff3cf71a45b8f3bc0c744dccb573a/crypto/SOL.png" width=30> | SOL   | 12Ymegdn9Gw27BoE9bkdH7TViDdmj4is1kpM7BWLuD9X |
+| <img src="https://github.com/0x00ASTRA/imgs/blob/da8ce370006ff3cf71a45b8f3bc0c744dccb573a/crypto/LTC.png" width=30> | LTC   | LeiSY4Frv5odEk16FgR6JMPNy7SurHwBN7           |
+| <img src="https://github.com/0x00ASTRA/imgs/blob/da8ce370006ff3cf71a45b8f3bc0c744dccb573a/crypto/BTC.png" width=30> | BTC   | 12kV7ixtjP7W8PowrgwsAQLafX1kzVg4PB           |
+| <img src="https://github.com/0x00ASTRA/imgs/blob/da8ce370006ff3cf71a45b8f3bc0c744dccb573a/crypto/ETH.png" width=30> | ETH   | 0x02c5e2ec62640771851D3BD0c283936A6481e678   |
+| <img src="https://github.com/0x00ASTRA/imgs/blob/da8ce370006ff3cf71a45b8f3bc0c744dccb573a/crypto/DOGE.png" width=30> | DOGE  | DLTzZUjJ8WwZ8rHNfeYTLcYALoRGu73s3t           |
+| <img src="https://github.com/0x00ASTRA/imgs/blob/da8ce370006ff3cf71a45b8f3bc0c744dccb573a/crypto/NEOX.png" width=30> | NEOX  | GNcbu5GuZKMUui8A9eZxGXhJurgSixNRfT           |
+| <img src="https://github.com/0x00ASTRA/imgs/blob/da8ce370006ff3cf71a45b8f3bc0c744dccb573a/crypto/RVN.png" width=30> | RVN   | RPCyf776AFX2qm3H3v77RnrvtX2QF2f1cg |
 
 
 ## Disclaimer ⚠️
