@@ -1,12 +1,19 @@
 import random
 import uuid
 
-class Router:
+class Node:
     def __init__(self):
         self.id = uuid.uuid4()
         self.online = True
         self.compromised = False
         self.reputation = 100  # Nodes start with a reputation of 100
+        self.clients = []
+
+    def connect(self, client: str):
+        try:
+            self.clients.append(client)
+        except:
+            print('Error: Unable to connect to host')
 
     def go_offline(self):
         self.online = False

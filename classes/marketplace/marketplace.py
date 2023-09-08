@@ -1,5 +1,5 @@
 from typing import List
-from marketplace_item import MarketplaceItem
+from .marketplace_item import MarketplaceItem
 
 class Marketplace:
     def __init__(self, name: str, description: str, items: List[MarketplaceItem] = []):

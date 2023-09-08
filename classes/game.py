@@ -10,9 +10,10 @@ class Game:
 
     def start_new_game(self):
         # Initialize the game state
+        self.tor_network.populate_network(20)
         self.state = {
             "character": self.character.to_json(),
-            "tor_network": self.tor_network.populate_network(), 
+            "tor_network": self.tor_network.nodes, 
             "dark_web_marketplace": self.dark_web_marketplace.items,
             "crypto_market": self.crypto_market.prices
         }
