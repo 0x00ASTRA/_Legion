@@ -13,3 +13,4 @@ Nodes will have connections with neighboring nodes thus traffic would have a pre
 ```
 [node-1]--->[node-rand1]--->[node-rand2]--->[node-rand3]--->[destination]
 ```
+Nodes will connect to random nodes within the network to obscure the origin node, mimicking The Onion Router.

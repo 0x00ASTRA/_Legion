@@ -10,8 +10,13 @@ class Game:
 
     def start_new_game(self):
         # Initialize the game state
-        self.state = {"character": self.character.to_json(), "tor_network": [str(node.id) for node in self.tor_network.nodes], 
-                      "dark_web_marketplace": self.dark_web_marketplace.items, "crypto_market": self.crypto_market.prices}
+        self.tor_network.populate_network(20)
+        self.state = {
+            "character": self.character.to_json(),
+            "tor_network": self.tor_network.nodes, 
+            "dark_web_marketplace": self.dark_web_marketplace.items,
+            "crypto_market": self.crypto_market.prices
+        }
 
     def save_game(self, filename):
         # Convert the game state to JSON and save it to a file

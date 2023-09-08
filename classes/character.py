@@ -1,5 +1,9 @@
+from typing import Dict, Any
+from .network.tor import TorNetwork
+
 class Character:
-    def __init__(self, name, skills, money, reputation, level, tor_network, wallet):
+    def __init__(self, name: str, skills: Dict[str, int], money: Dict[str, float], 
+                 reputation: Dict[str, float], level: int, tor_network: TorNetwork, wallet: Dict[str, Any]):
         self.name = name
         self.skills = skills
         self.money = money
@@ -8,7 +12,12 @@ class Character:
         self.tor_network = tor_network
         self.wallet = wallet
 
-    def to_json(self):
-        return {"name": self.name, "skills": self.skills, "money": self.money, 
-                "reputation": self.reputation.to_json(), "level": self.level.to_json(), 
-                "wallet": self.wallet.currencies}
+    def to_json(self) -> Dict[str, Any]:
+        return {
+            "name": self.name,
+            "skills": self.skills,
+            "money": self.money, 
+            "reputation": self.reputation,
+            "level": self.level,
+            "wallet": self.wallet
+        }
