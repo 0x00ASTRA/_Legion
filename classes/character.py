@@ -10,5 +10,5 @@ class Character:
 
     def to_json(self):
         return {"name": self.name, "skills": self.skills, "money": self.money, 
-                "reputation": self.reputation.to_json(), "level": self.level.to_json(), 
+                "reputation": self.reputation.to_json(), "level": self.level, 
                 "wallet": self.wallet.currencies}

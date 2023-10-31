@@ -1,20 +1,22 @@
 # Import classes from their respective modules
-from classes.character import Character, Reputation, LevelingSystem
+from classes.character import Character
+from classes.reputation import Reputation
 from classes.attacks import Virus, Ransomware, Worm, Phishing, Exploit
 from classes.computer import Computer
 from classes.hardware import CPU, GPU, RAM, Storage
-from classes.network import Node, TorNetwork
-from classes.crypto.crypto_currency import CryptoWallet
+from classes.network.network import Router
+from classes.network.tor import TorNetwork
+from classes.crypto.crypto_wallet import CryptoWallet
 from classes.marketplace import DarkWebMarketplace
 from classes.game import Game
 from classes.crypto.crypto_market import CryptoMarket
 
 # Create a character with a Tor network and a crypto wallet
 tor_network = TorNetwork()
-node = Node()
+node = Router()
 tor_network.add_node(node)
 wallet = CryptoWallet(currencies={"BTC": 1, "ETH": 2})
-character = Character(name="Alice", skills={"hacking": 5}, money=10000, reputation=Reputation(), level=LevelingSystem(xp_to_level_up=100), tor_network=tor_network, wallet=wallet)
+character = Character(name="Alice", skills={"hacking": 5}, money=10000, reputation=Reputation(), level=0, tor_network=tor_network, wallet=wallet)
 
 # Create a dark web marketplace and a crypto market
 dark_web_marketplace = DarkWebMarketplace(items={"illegal software": 0.5, "stolen credit card": 0.2, "hacker toolkit": 1})

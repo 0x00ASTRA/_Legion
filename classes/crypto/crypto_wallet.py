@@ -2,7 +2,7 @@ import rsa
 
 class CryptoWallet:
     def __init__(self, currencies):
-        self.currencies = {}
+        self.currencies = []
         self.currencies.append(currencies)
         # Generate a new public and private key pair
         (self.public_key, self.private_key) = rsa.newkeys(512)
