@@ -1,12 +1,20 @@
 import random
 import uuid
+import logging
 
-class Router:
+class Node:
     def __init__(self):
         self.id = uuid.uuid4()
         self.online = True
         self.compromised = False
         self.reputation = 100  # Nodes start with a reputation of 100
+        self.clients = []
+
+    def connect(self, client: str):
+        try:
+            self.clients.append(client)
+        except:
+            print('Error: Unable to connect to host')
 
     def go_offline(self):
         self.online = False
@@ -19,6 +27,10 @@ class Router:
         self.compromised = True
         self.reputation -= 50  # Getting compromised significantly reduces the node's reputation
 
+    def receive_packet(self, packet):
+        # Add logic here to handle received packet
+        logging.info(f"Node {self.id} received packet {packet}")
+        return True
 
 class Network:
     def __init__(self):
@@ -34,10 +46,11 @@ class Network:
         # Only online nodes can relay packets
         online_nodes = [node for node in self.nodes if node.online]
         if not online_nodes:
-            return False
+            raise Exception("No online nodes available to send packet")
         # The packet bounces between a random number of online nodes before reaching its destination
         num_bounces = random.randint(1, len(online_nodes))
+        random.shuffle(online_nodes)
         for _ in range(num_bounces):
-            random.choice(online_nodes)
-        target_id.receive_packet(packet)
-        return True
+            node = online_nodes.pop()
+            logging.info(f"Packet {packet} bounced to node {node.id}")
+        return target_id.receive_packet(packet)
