@@ -17,7 +17,7 @@ node = Router()
 tor_network.add_node(node)
 wallet = CryptoWallet(currencies={"BTC": 1, "ETH": 2})
 character = Character(name="Alice", skills={"hacking": 5}, money=10000, reputation=Reputation(), level=0, tor_network=tor_network, wallet=wallet)
-
+players_PC = Computer(CPU("Intel", "Core i7", 3.5), GPU("NVIDIA", "RTX 3060", 12, 2.5), RAM(16), Storage("SSD", 500, 1000))
 # Create a dark web marketplace and a crypto market
 dark_web_marketplace = DarkWebMarketplace(items={"illegal software": 0.5, "stolen credit card": 0.2, "hacker toolkit": 1})
 crypto_market = CryptoMarket(prices={"BTC": 50000, "ETH": 2000})
