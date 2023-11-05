@@ -1,9 +1,10 @@
 import random
-import classes.crypto.crypto_currency as CryptoCurrency
+from typing import List
+from classes.crypto.crypto_currency import CryptoCurrency
 
 class CryptoMarket:
     def __init__(self, prices):
-        self.currencies: CryptoCurrency = []
+        self.currencies: List[CryptoCurrency] = []
 
     def update_prices(self):
         for currency in self.prices:
