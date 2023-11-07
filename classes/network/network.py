@@ -5,6 +5,7 @@ from  classes.hardware.network_interface import NetworkInterface
 class Router:
     def __init__(self):
         self.external_address = uuid.uuid4()
+        self.external_address = uuid.uuid4()
         self.online = True
         self.compromised = False
         self.reputation = 100  # Nodes start with a reputation of 100
@@ -15,6 +16,7 @@ class Router:
 
     def go_online(self) -> bool:
         self.online = True
+
 
     def compromise(self) -> bool:
         self.compromised = True
