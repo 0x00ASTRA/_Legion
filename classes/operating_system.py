@@ -17,11 +17,11 @@ class OS:
     def delete_file(self, path):
         pass
 
-    def create_file(self, path):
+    def create_file(self, path, name):
         pass
 
-    def create_folder(self, path):
-        pass
+    def create_folder(self, path: str, name: str):
+        self.filesystem.add_folder(path, name)
 
     def delete_folder(self, path):
         pass
