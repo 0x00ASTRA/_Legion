@@ -1,24 +1,25 @@
 import random
 import uuid
+from  classes.hardware.network_interface import NetworkInterface
 
 class Router:
     def __init__(self):
-        self.id = uuid.uuid4()
+        self.external_address = uuid.uuid4()
         self.online = True
         self.compromised = False
         self.reputation = 100  # Nodes start with a reputation of 100
 
-    def go_offline(self):
+    def go_offline(self) -> bool:
         self.online = False
         self.reputation -= 10  # Going offline reduces the node's reputation
 
-    def go_online(self):
+    def go_online(self) -> bool:
         self.online = True
 
-    def compromise(self):
+    def compromise(self) -> bool:
         self.compromised = True
         self.reputation -= 50  # Getting compromised significantly reduces the node's reputation
-
+    
 
 class Network:
     def __init__(self):

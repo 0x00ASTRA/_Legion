@@ -1,4 +1,4 @@
-from classes.hardware_component import HardwareComponent
+from classes.hardware.hardware_component import HardwareComponent
 
 class CPU(HardwareComponent):
     def __init__(self, brand: str, model: str, speed: int):

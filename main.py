@@ -2,8 +2,8 @@
 from classes.character import Character, Reputation, LevelingSystem
 from classes.attacks import Virus, Ransomware, Worm, Phishing, Exploit
 from classes.computer import Computer
-from classes.hardware import CPU, GPU, RAM, Storage
-from classes.network import Node, TorNetwork
+from classes.hardware.hardware import CPU, GPU, RAM, Storage
+from classes.network.network import Node, Network
 from classes.crypto.crypto_currency import CryptoWallet
 from classes.marketplace import DarkWebMarketplace
 from classes.game import Game
