@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 __pycache__
+=======
+venv
+__pycache__
+classes/network/__pycache__/packet.cpython-311.pyc
+>>>>>>> network
