@@ -14,13 +14,13 @@ The experience system is a crucial part to game progression. Without it, games o
 >
 >[Psychological](#psycological)
 >
->[Orginization](#orginization)
+>[Organization](#organization)
 
 ## Information Technology (IT)
 
-The Information Technology category contains all of the experience reagarding all things digital. Below you can find the different attributes and their descriptions.
+The Information Technology category contains all of the experience regarding all things digital. Below you can find the different attributes and their descriptions.
 
-### Experience Table
+### IT XP Table
 
 | Category   | Subcategory          | Proficiency |
 |------------|----------------------|-------------|
@@ -485,10 +485,331 @@ class IT(XPCategory):
 
 ## Tactical
 
+The characters Tactical XP Category encompasses their combat proficency. How lethal is your player?
+
+### Tactical XP Table
+
+| Category   | Subcategory          | Proficiency |
+|------------|----------------------|-------------|
+| Tactics    | Strategy             | 0           |
+|            | Planning             | 0           |
+|            | Adaptability         | 0           |
+|            | Decision-making      | 0           |
+|            | Risk Assessment      | 0           |
+| Combat     | Weapon Proficiency   | 0           |
+|            | Close Quarters Combat| 0           |
+|            | Marksmanship         | 0           |
+|            | Tactical Maneuvers   | 0           |
+| Survival   | Wilderness Skills    | 0           |
+|            | First Aid            | 0           |
+|            | Resourcefulness      | 0           |
+|            | Navigation           | 0           |
+
+### JSON Object
+
+```json
+{
+    "Tactical": {
+        "Tactics": {
+            "strategy": 0,
+            "planning": 0,
+            "Adaptability": 0,
+            "decision_making": 0,
+            "risk_assessment": 0
+        },
+        "combat": {
+            "weapon_proficiency": 0,
+            "cqb": 0,
+            "hand2hand": 0,
+            "marksmanship": 0,
+            "tactical_maneuvers": 0
+        },
+        "Survival": {
+            "Wilderness Skills": 0,
+            "First Aid": 0,
+            "Resourcefulness": 0,
+            "Navigation": 0
+        }
+    }
+}
+```
+
+### Python Class
+
+```python
+class Tactical(XPCategory):
+    def __init__(
+        self,
+        tactics: Tactics,
+        combat: Combat,
+        survival: Survival,
+    ):
+        self.tactics = tactics
+        self.combat = combat
+        self.survival = survival
+
+```
+
+### Tactics
+
+> #### *All stats related to tactical strategies.*
+
+>```json
+>"Tactical": {
+>    "tactics": {
+>        "Strategy": 0,
+>        "Planning": 0,
+>        "Adaptability": 0,
+>        "Decision-making": 0,
+>        "Risk Assessment": 0
+>    }
+>}
+>```
+
+>```python
+>class Tactics(XPStatCategory):
+>   def __init__(
+>       self,
+>       strategy: int =0,
+>       planning: int =0,
+>       adaptability: int =0,
+>       decision_making: int =0,
+>       risk_assessment: int =0
+>   ):
+>       self.strategy = strategy
+>       self.planning = planning
+>       self.adaptability = adaptability
+>       self.decision_making = decision_making
+>       self.risk_assessment = risk_assessment
+>
+>```
+
+#### Stats
+
+##### Strategy
+
+```json
+"tactics": {
+    "strategy": 0
+}
+```
+
+> This subcategory involves the player's proficiency in developing high-level strategies. It reflects the player's capability to devise plans, objectives, and methodologies, often involving long-term or overarching strategies.
+
+##### Planning
+
+```json
+"tactics": {
+    "planning": 0
+}
+```
+
+> Planning represents the skill of creating specific plans and organizing actionable steps to achieve predefined goals or objectives. Proficiency in planning indicates the player's ability to break down strategies into practical steps.
+
+##### Adaptability
+
+```json
+"tactics": {
+    "adaptability": 0
+}
+```
+
+> This area measures the player's ability to adjust and modify plans or strategies on the fly based on changing circumstances. A higher proficiency in adaptability indicates a better capability to swiftly adjust to unexpected situations.
+
+##### Decision Making
+
+```json
+"tactics": {
+    "decision_making": 0
+}
+```
+
+> Decision-making reflects the player's capability to make swift and effective decisions within the context of the defined strategy. It showcases the proficiency in making informed and rational choices.
+
+##### Risk Assesment
+
+```json
+"tactics": {
+    "risk_assessment": 0
+}
+```
+
+> This segment focuses on the player's ability to evaluate and analyze risks associated with the defined strategy. It involves assessing potential risks and implementing measures to mitigate them effectively.
+
+---
+
+### Combat
+
+> #### *All stats related to Combat experience.*
+
+>```json
+>"Tactical": {
+>    "combat": {
+>        "weapon_proficiency": 0,
+>        "cqb": 0,
+>        "hand2hand": 0,
+>        "marksmanship": 0,
+>        "tactical_maneuvers": 0
+>    }
+>}
+>```
+
+>```python
+>class Combat(XPStatCategory):
+>   def __init__(
+>       self,
+>       weapon_proficiency: int =0,
+>       cqb: int =0,
+>       hand2hand: int =0,
+>       marksmanship: int =0,
+>       tactical_maneuvers: int =0
+>   ):
+>       self.weapon_proficiency = weapon_proficiency
+>       self.cqb = cqb
+>       self.hand2haand = hand2hand
+>       self.marksmanship = marksmanship
+>       self.tactical_maneuvers = tactical_maneuvers
+>
+>```
+
+#### Stats
+
+##### Weapon Proficiency
+
+```json
+"combat": {
+    "weapon_proficiency": 0
+}
+```
+
+> Weapon Proficiency represents the skill level in handling and using various types of weapons effectively. It includes mastery with diverse weapon types, such as firearms, melee weapons, or specialized tools.
+
+##### CQB
+
+```json
+"combat": {
+    "cqb": 0
+}
+```
+
+> This subcategory involves expertise in fighting at close range. It signifies the player's proficiency in hand-to-hand combat, grappling, or melee combat in confined spaces.
+
+##### Hand 2 Hand
+
+```json
+"combat": {
+    "hand2hand": 0
+}
+```
+
+> Hand 2 Hand refersto the player's proficiency melee combat scenarios. It aims to quantify how likely a player is to survive a fist or knife fight; All forms of bladed and melee weaopons included.
+
+##### Marksmanship
+
+```json
+"combat": {
+    "marksmanship": 0
+}
+```
+
+> Marksmanship refers to the player's proficiency in using ranged weapons, especially firearms, with precision and accuracy. It reflects the player's skill in aiming and shooting at targets accurately.
+
+##### Tactical Maneuvers
+
+```json
+"combat": {
+    "tactical_maneuvers": 0
+}
+```
+
+> Tactical Maneuvers represent the player's expertise in executing strategic movements or actions during combat. It encompasses skills such as flanking, suppressing fire, cover usage, or other tactical movements in combat scenarios.
+
+---
+
+### Survival
+
+> #### *All stats related to the character's ability to survive in any given scenario or enviroment.*
+
+>```json
+>"Tactical": {
+>    "survival": {
+>        "wilderness_skills": 0,
+>        "first_aid": 0,
+>        "resourcefulness": 0,
+>        "navigation": 0
+>    }
+>}
+>```
+
+>```python
+>class Survival(XPStatCategory):
+>   def __init__(
+>       self,
+>       wilderness_skills,
+>       first_aid,
+>       resourcefulness,
+>       navigation
+>   ):
+>       self.wilderness_skills = wilderness_skills
+>       self.first_aid = first_aid
+>       self.resourcefulness = resourcefulness
+>       self.navigation = navigation
+>```
+
+#### Stats
+
+##### Wilderness Skills
+
+```json
+"survival": {
+    "wilderness_skills": 0
+}
+```
+
+> Wilderness Skills encompass proficiency in surviving and thriving in natural environments. It involves knowledge of outdoor survival, shelter building, foraging, hunting, and other essential skills required in the wilderness.
+
+##### Fist Aid
+
+```json
+"survival": {
+    "first_aid": 0
+}
+```
+
+> First Aid signifies the player's proficiency in providing initial medical assistance in emergency situations. It includes skills in treating wounds, administering CPR, managing injuries, or stabilizing individuals until further medical help arrives.
+
+##### Resourcefullness
+
+```json
+"survival": {
+    "resourcefullness": 0
+}
+```
+
+> Resourcefulness measures the player's ability to adapt and find innovative solutions in challenging situations. It includes the ability to use available resources effectively, solve problems, and adapt to changing conditions.
+
+##### Navigation
+
+```json
+"survival": {
+    "navigation": 0
+}
+```
+
+> Navigation relates to the player's capability to traverse terrains by using maps, compasses, or other navigational tools. It includes skills in orienteering, map reading, understanding coordinates, and effectively navigating through environments.
+
+---
+
 ## Social
+
+---
 
 ## Physical
 
+---
+
 ## Psycological
 
-## Orginization
+---
+
+## Organization
