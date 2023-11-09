@@ -421,6 +421,11 @@ class IT(XPCategory):
 >        logic: int =0,
 >        efficiency: int =0
 >    ):
+>       self.fundimentals = fundimentals
+>       self.electrical = electrical
+>       self.architecture = architecture
+>       self.logic = logic
+>       self.efficiency = efficiency
 >
 >```
 
