@@ -150,7 +150,7 @@ class IT(XPCategory):
 
 ```json
 "hacking": {
-    "fundimentals": 0 //<- integer
+    "fundimentals": 0
 }
 ```
 
@@ -160,7 +160,7 @@ class IT(XPCategory):
 
 ```json
 "hacking": {
-    "recon": 0 //<- integer
+    "recon": 0
 }
 ```
 
@@ -169,7 +169,7 @@ class IT(XPCategory):
 #### Attacks:
 ```json
 "hacking": {
-    "attacks": 0 //<- integer
+    "attacks": 0
 }
 ```
 
@@ -179,7 +179,7 @@ class IT(XPCategory):
 
 ```json
 "hacking": {
-    "exploitaion": 0 //<- integer
+    "exploitaion": 0
 }
 ```
 
@@ -189,7 +189,7 @@ class IT(XPCategory):
 
 ```json
 "hacking": {
-    "post_exploitaion": 0 //<- integer
+    "post_exploitaion": 0
 }
 ```
 
@@ -199,7 +199,7 @@ class IT(XPCategory):
 
 ```json
 "hacking": {
-    "stealth": 0 //<- integer
+    "stealth": 0
 }
 ```
 
@@ -252,7 +252,7 @@ class IT(XPCategory):
 
 ```json
 "programming": {
-    "fundimentals": 0 //<- integer
+    "fundimentals": 0
 }
 ```
 
@@ -262,7 +262,7 @@ class IT(XPCategory):
 
 ```json
 "programming": {
-    "paradigms": 0 //<- integer
+    "paradigms": 0
 }
 ```
 
@@ -272,7 +272,7 @@ class IT(XPCategory):
 
 ```json
 "programming": {
-    "logic": 0 //<- integer
+    "logic": 0
 }
 ```
 
@@ -282,7 +282,7 @@ class IT(XPCategory):
 
 ```json
 "programming": {
-    "control_flow": 0 //<- integer
+    "control_flow": 0
 }
 ```
 
@@ -292,7 +292,7 @@ class IT(XPCategory):
 
 ```json
 "programming": {
-    "languages": 0 //<- integer
+    "languages": 0
 }
 ```
 
@@ -302,7 +302,7 @@ class IT(XPCategory):
 
 ```json
 "programming": {
-    "language_mastery": 0 //<- integer
+    "language_mastery": 0
 }
 ```
 
@@ -312,7 +312,7 @@ class IT(XPCategory):
 
 ```json
 "programming": {
-    "data_analysis": 0 //<- integer
+    "data_analysis": 0
 }
 ```
 
@@ -356,7 +356,7 @@ class IT(XPCategory):
 
 ```json
 "networking": {
-    fundimentals: 0 //<- integer
+    fundimentals: 0
 }
 ```
 
@@ -366,7 +366,7 @@ class IT(XPCategory):
 
 ```json
 "networking":  {
-    "security": 0 //<- integer
+    "security": 0
 }
 ```
 
@@ -376,7 +376,7 @@ class IT(XPCategory):
 
 ```json
 "networking": {
-    "architecture": 0 //<- integer
+    "architecture": 0
 }
 ```
 
@@ -386,7 +386,7 @@ class IT(XPCategory):
 
 ```json
 "networking": {
-    "redundancy": 0 //<- integer
+    "redundancy": 0
 }
 ```
 
@@ -429,7 +429,7 @@ class IT(XPCategory):
 
 ```json
 "hardware": {
-    "fundimentals": 0 //<- integer
+    "fundimentals": 0
 }
 ```
 
@@ -439,7 +439,7 @@ class IT(XPCategory):
 
 ```json
 "hardware": {
-    "electrical": 0 //<- integer
+    "electrical": 0
 }
 ```
 
@@ -449,7 +449,7 @@ class IT(XPCategory):
 
 ```json
 "hardware": {
-    "architecture": 0 //<- integer
+    "architecture": 0
 }
 ```
 
