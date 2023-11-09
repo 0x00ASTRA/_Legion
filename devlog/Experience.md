@@ -357,7 +357,7 @@ class IT(XPCategory):
 
 ```json
 "networking": {
-    fundimentals: 0
+    "fundimentals": 0
 }
 ```
 
