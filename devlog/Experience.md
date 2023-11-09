@@ -167,6 +167,7 @@ class IT(XPCategory):
 > This subcategory relates to the ***preliminary phase*** in hacking, involving the acquisition of information and the assessment of a target before launching an attack. Each target typically contains specific data sets available for reconnaissance. The proficiency in recon is reflected by the number of these data sets the player can successfully gather before initiating an attack.
 
 #### Attacks:
+
 ```json
 "hacking": {
     "attacks": 0
@@ -459,7 +460,7 @@ class IT(XPCategory):
 
 ```json
 "hardware": {
-    "logic": 0 <-integer
+    "logic": 0
 }
 ```
 
@@ -469,7 +470,7 @@ class IT(XPCategory):
 
 ```json
 "hardware": {
-    "efficiency": 0 <-integer
+    "efficiency": 0
 }
 ```
 
