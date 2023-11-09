@@ -510,7 +510,7 @@ The characters Tactical XP Category encompasses their combat proficency. How let
 ```json
 {
     "Tactical": {
-        "Tactics": {
+        "tactics": {
             "strategy": 0,
             "planning": 0,
             "Adaptability": 0,
@@ -524,7 +524,7 @@ The characters Tactical XP Category encompasses their combat proficency. How let
             "marksmanship": 0,
             "tactical_maneuvers": 0
         },
-        "Survival": {
+        "survival": {
             "Wilderness Skills": 0,
             "First Aid": 0,
             "Resourcefulness": 0,
@@ -557,11 +557,11 @@ class Tactical(XPCategory):
 >```json
 >"Tactical": {
 >    "tactics": {
->        "Strategy": 0,
->        "Planning": 0,
->        "Adaptability": 0,
->        "Decision-making": 0,
->        "Risk Assessment": 0
+>        "strategy": 0,
+>        "planning": 0,
+>        "adaptability": 0,
+>        "decision_making": 0,
+>        "risk_assessment": 0
 >    }
 >}
 >```
@@ -745,10 +745,10 @@ class Tactical(XPCategory):
 >class Survival(XPStatCategory):
 >   def __init__(
 >       self,
->       wilderness_skills,
->       first_aid,
->       resourcefulness,
->       navigation
+>       wilderness_skills: int =0,
+>       first_aid: int  =0,
+>       resourcefulness: int =0,
+>       navigation: int =0
 >   ):
 >       self.wilderness_skills = wilderness_skills
 >       self.first_aid = first_aid
