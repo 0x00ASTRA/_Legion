@@ -1,4 +1,5 @@
 import random
+import rsa
 
 def generate_serial_id(id_length = 6, section_size = 4):
     id = ''
@@ -9,3 +10,7 @@ def generate_serial_id(id_length = 6, section_size = 4):
         if i < id_length:
             id += '::'
     return id
+
+def generate_keys() -> tuple:
+    (pubkey, privkey) = rsa.newkeys(2048)
+    return (pubkey, privkey)
