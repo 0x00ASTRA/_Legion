@@ -10,7 +10,7 @@ Welcome to _Legion, a Python-based hacking simulation game that emulates the sha
 
 Experience the thrill of infiltrating highly secure digital fortresses, outwitting intelligent security systems, and deciphering encrypted data all while being engrossed in a hacker's battlefield. Join the silent war in the digital void, become a part of Legion.
 
-_"We are not a player, We are the game itself"_
+_"We are not just players, We are the game itself"_
 
 ## Features 💻
 
@@ -56,9 +56,10 @@ Detailed gameplay guide can be found [here](link-to-the-guide).
 
 Legion embraces the very essence of the hacker ethos - collaboration. We are all a part of this digital revolution. Every bug found, every improvement made, brings us closer to the perfect simulation. Feel free to submit bug reports, feature requests, and pull requests!
 
-Before contributing, please read our [Contribution Guidelines](link-to-guidelines) and [Code of Conduct](link-to-conduct).
+Before contributing, please read our [Contribution Guidelines](link-to-guidelines) and [Code of Conduct](link-to-conduct).)
 
-### Wallets 🪙
+## Wallets 🪙
+
 | Icon | Token | Address                                      |
 |------| ----- | -------------------------------------------- |
 | <img src="https://github.com/0x00ASTRA/imgs/blob/da8ce370006ff3cf71a45b8f3bc0c744dccb573a/crypto/SOL.png" width=30> | SOL   | 12Ymegdn9Gw27BoE9bkdH7TViDdmj4is1kpM7BWLuD9X |

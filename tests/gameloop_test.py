@@ -1,9 +1,9 @@
-from classes.game import Game
-from classes.character import Character
-from classes.network.tor import TorNetwork
-from classes.marketplace.darkweb_marketplace import DarkwebMarketplace
-from classes.marketplace.marketplace_item import MarketplaceItem
-from classes.crypto.crypto_market import CryptoMarket
+from src.game import Game
+from src.character import Character
+from src.network.tor import TorNetwork
+from src.marketplace.darkweb_marketplace import DarkwebMarketplace
+from src.marketplace.marketplace_item import MarketplaceItem
+from src.crypto.crypto_market import CryptoMarket
 
 # Market items
 coke = MarketplaceItem(name='Cocaine (1g)', description='Straight from Columbia. Keeps the night owls ready for anything', price=100, category='Narcotics', quantity=500)

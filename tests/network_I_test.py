@@ -8,7 +8,7 @@ root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Add the root directory to the Python path
 sys.path.append(root_path)
 
-from classes.hardware.network_interface import NetworkInterface
+from src.hardware.network_interface import NetworkInterface
 import json
 
 manufacturer = "My Company"

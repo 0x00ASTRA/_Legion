@@ -1,0 +1,64 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/0x00ASTRA/web5-schemas/_Legion/gameState",
+    "title": "Game State Schema",
+    "type": "object",
+    "properties": {
+      "character": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "skills": {
+            "type": "object",
+            "properties": {
+              "hacking": {
+                "type": "integer"
+              }
+            },
+            "required": ["hacking"]
+          },
+          "money": {
+            "type": "integer"
+          },
+          "reputation": {
+            "type": "string"
+          },
+          "level": {
+            "type": "integer"
+          },
+          "wallet": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "required": ["name", "skills", "money", "reputation", "level", "wallet"]
+      },
+      "tor_network": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "dark_web_marketplace": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "number"
+        }
+      },
+      "crypto_market": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "integer"
+        }
+      }
+    },
+    "required": ["character", "tor_network", "dark_web_marketplace", "crypto_market"]
+  }

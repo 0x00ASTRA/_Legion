@@ -1,15 +1,15 @@
 # Import classes from their respective modules
-from classes.character import Character
-from classes.reputation import Reputation
-from classes.attacks import Virus, Ransomware, Worm, Phishing, Exploit
-from classes.computer import Computer
-from classes.hardware import CPU, GPU, RAM, Storage
-from classes.network.network import Router
-from classes.network.tor import TorNetwork
-from classes.crypto.crypto_wallet import CryptoWallet
-from classes.marketplace import DarkWebMarketplace
-from classes.game import Game
-from classes.crypto.crypto_market import CryptoMarket
+from src.character import Character
+from src.reputation import Reputation
+from src.attacks import Virus, Ransomware, Worm, Phishing, Exploit
+from src.computer import Computer
+from src.hardware import CPU, GPU, RAM, Storage
+from src.network.network import Router
+from src.network.tor import TorNetwork
+from src.crypto.crypto_wallet import CryptoWallet
+from src.marketplace import DarkWebMarketplace
+from src.game import Game
+from src.crypto.crypto_market import CryptoMarket
 
 # Create a character with a Tor network and a crypto wallet
 tor_network = TorNetwork()

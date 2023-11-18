@@ -10,7 +10,7 @@ root_path = os.path.dirname(os.path.dirname(current_file_path))
 # Add the root directory to the Python path
 sys.path.append(root_path)
 
-from classes.network.packet import Packet
+from src.network.packet import Packet
 
 # Sample data
 data = {
